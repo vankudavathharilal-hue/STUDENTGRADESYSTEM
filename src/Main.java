@@ -61,15 +61,15 @@ public class Main {
             int choice = readInt();
 
             switch (choice) {
-                case 1 -> addStudent();
-                case 2 -> displayAllStudents();
-                case 3 -> searchStudent();
-                case 4 -> {
+                case 1: addStudent(); break;
+                case 2: displayAllStudents(); break;
+                case 3: searchStudent(); break;
+                case 4: {
                     System.out.println("Program ended. Thank you!");
                     sc.close();
                     return;
                 }
-                default -> System.out.println("Invalid choice. Try again.");
+                default: System.out.println("Invalid choice. Try again.");
             }
         }
     }
